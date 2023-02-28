@@ -8,5 +8,5 @@ Copy . app.py /app/
 
 # Install packages for requirements.txt
 # hadolint ignore=
-RUN pip install --upgrade pip  &&\
-    pip install --trusted-host pypi.python.org -r requirements.txt
+RUN python -m pip install --upgrade pip  &&\
+    python -m pip install --trusted-host pypi.python.org -r requirements.txt
