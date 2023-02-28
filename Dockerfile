@@ -8,5 +8,5 @@ Copy . app.py /app/
 
 # Install packages for requirements.txt
 # hadolint ignore=
-RUN pip install --upgrade pip 23.0.1  &&\
+RUN pip install --upgrade pip  &&\
     pip install --trusted-host pypi.python.org -r requirements.txt
